@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="{{ url('css/profile.css') }}">
-    <!--<scrpit type="text/javascript" src="{{ url('js/profile.js') }}" defer></scrpit>-->
+    <link rel="stylesheet" href="{{ url('css/profile-index.css') }}">
 </head>
 <body>
     <header>
@@ -53,41 +52,16 @@
             <div class="prog-bar">
                 <div id="electronics" style="height: 100%; width: 90%; background-color: blue;"></div>
             </div>
-            <p>Other</p>
-            <div class="prog-bar">
-                <div id="electronics" style="height: 100%; width: 80%; background-color: purple;"></div>
-            </div>
+            <a href="{{ route('profile.edit') }}">+</a>
         </div>
         <div class="block" id="daily">
-            <h4>Daily Expenses</h4>
-            <p>5773</p>
-        </div>
-        <div class="block" id="how-much">
-            <h4>How Much Did You Spend Today?</h4>
-            <p>Category</p>
-            <div>
-                <p style="color: black; font-size: 20px;" id="categ">---</p>
-                <ion-icon name="chevron-down-outline" style="color: black;" id="btn"></ion-icon>
-            </div>
-            <p>Amount of Money</p>
-            <input type="text">
-            <button>Add</button>
-        </div>
-        <div id="drp-down">
-            <ul>
-                <li>Electronics</li>
-                <li>Education</li>
-                <li>Healthcare</li>
-                <li>Entertainment</li>
-                <li>Clothes</li>
-                <li>Food</li>
-                <li>Other</li>
-            </ul>
+            <h4>Overall</h4>
+            <p>57730</p>
         </div>
     </main>
     <footer>
         <ul>
-            <li><a href="{{ route('profile') }}">Profile</a></li>
+            <li><a href="{{ route('profile.index') }}">Profile</a></li>
             <li><a href="{{ route('index') }}">Home</a></li>
             <li><a href="{{ route('convert') }}">Convert</a></li>
             <li><a href="{{ route('about') }}">About</a></li>
@@ -95,21 +69,6 @@
             <li><a href="{{ route('registration.index') }}">Sign In / Sign Up</a></li>
         </ul>
     </footer>
-    <script>
-        document.getElementById('btn').addEventListener('click', () => {
-            if (document.getElementById('drp-down').style.display == 'block') {
-                document.getElementById('drp-down').style.display = 'none';
-            } else {
-                document.getElementById('drp-down').style.display = 'block';
-            }
-        })
-
-        for (let i = 0; i < 7; i++) {
-            document.getElementsByTagName('li')[i].addEventListener('click', () => {
-                document.getElementById('categ').innerHTML = document.getElementsByTagName('li')[i].innerHTML;
-            })
-        }
-    </script>
     <!-- icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

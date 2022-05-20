@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="block" id="profile">
-            <a href="{{ route('profile') }}" style="color: white;">
+            <a href="{{ route('profile.index') }}" style="color: white;">
                 <ion-icon name="person-outline" id="icon"></ion-icon>
             </a>
         </div>
@@ -25,7 +25,7 @@
     </main>
     <footer>
         <ul>
-            <li><a href="{{ route('profile') }}">Profile</a></li>
+            <li><a href="{{ route('profile.index') }}">Profile</a></li>
             <li><a href="{{ route('index') }}">Home</a></li>
             <li><a href="{{ route('convert') }}">Convert</a></li>
             <li><a href="{{ route('about') }}">About</a></li>

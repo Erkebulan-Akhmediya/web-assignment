@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\WalletController;
 use App\Models\Money;
 
 /*
@@ -31,14 +32,15 @@ Route::get('/contact', function () {
     return redirect('/#contact');
 })->name('contact');
 
+/*
 Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
-/*
 Route::get('/logres', function () {
     return view('logres');
 })->name('logres');
 */
 
 Route::resource('registration', RegistrationController::class);
+Route::resource('profile', WalletController::class);
