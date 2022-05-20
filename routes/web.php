@@ -34,8 +34,10 @@ Route::get('/profile', function () {
     return view('profile');
 })->name('profile');
 
+/*
 Route::get('/logres', function () {
     return view('logres');
 })->name('logres');
+*/
 
-Route::resource('add', RegistrationController::class);
+Route::resource('registration', RegistrationController::class);

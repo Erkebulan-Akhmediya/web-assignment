@@ -30,7 +30,7 @@
             <li><a href="{{ route('convert') }}">Convert</a></li>
             <li><a href="{{ route('about') }}">About</a></li>
             <li><a href="{{ route('contact') }}">Contact</a></li>
-            <li><a href="{{ route('logres') }}">Sign In / Sign Up</a></li>
+            <li><a href="{{ route('registration.index') }}">Sign In / Sign Up</a></li>
         </ul>
     </footer>
     <!-- icons -->
