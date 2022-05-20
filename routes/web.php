@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ResourceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,3 +37,5 @@ Route::get('/profile', function () {
 Route::get('/logres', function () {
     return view('logres');
 })->name('logres');
+
+Route::resource('add', ResourceController::class);
