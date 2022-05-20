@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ResourceController;
+use App\Http\Controllers\RegistrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,4 +38,4 @@ Route::get('/logres', function () {
     return view('logres');
 })->name('logres');
 
-Route::resource('add', ResourceController::class);
+Route::resource('add', RegistrationController::class);

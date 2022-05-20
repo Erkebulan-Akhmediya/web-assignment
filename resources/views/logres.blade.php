@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="{{ url('css/logres.css') }}">
 </head>
 <body>
-    <div class="block"  id="reg">
-        <h1>Registration</h1>
-        <p>Email</p>
-        <input type="email">
-        <p>Password</p>
-        <input type="password">
-        <p>Verify Password</p>
-        <input type="password">
-        <a id="reg-btn">Register</a>
-        <p>Already have an account? <a id="btn">Login</a></p>
+    <div>
+        <form method="POST" action="{{ route('add.store') }}" class="block" id="reg">
+            @csrf
+            <h1>Registration</h1>
+            <p>Username</p>
+            <input type="text" name="username">
+            <p>Password</p>
+            <input type="password" name="password">
+            <p>Verify Password</p>
+            <input type="password" name="password-2">
+            <input type="submit" id="reg-btn" value="Register">
+            <p>Already have an account? <a id="btn">Login</a></p>
+        </form>
     </div>
     <div class="block" id="log">
         <h1>Login</h1>
