@@ -64,6 +64,7 @@ class RegistrationController extends Controller
     public function show($id)
     {
         //
+        return Money::findOrFail(0);
     }
 
     /**
