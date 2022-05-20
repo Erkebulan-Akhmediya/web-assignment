@@ -15,6 +15,15 @@ class CreateMoneyTable extends Migration
     {
         Schema::create('money', function (Blueprint $table) {
             $table->id();
+            $table->string('username');
+            $table->string('password');
+            $table->integer('electronics');
+            $table->integer('education');
+            $table->integer('healthcare');
+            $table->integer('entertainment');
+            $table->integer('clothes');
+            $table->integer('food');
+            $table->integer('other');
             $table->timestamps();
         });
     }

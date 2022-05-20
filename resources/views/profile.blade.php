@@ -53,7 +53,7 @@
             <div class="prog-bar">
                 <div id="electronics" style="height: 100%; width: 90%; background-color: blue;"></div>
             </div>
-            <p>Self-Improvement</p>
+            <p>Other</p>
             <div class="prog-bar">
                 <div id="electronics" style="height: 100%; width: 80%; background-color: purple;"></div>
             </div>
@@ -81,7 +81,7 @@
                 <li>Entertainment</li>
                 <li>Clothes</li>
                 <li>Food</li>
-                <li>Self-Improvement</li>
+                <li>Other</li>
             </ul>
         </div>
     </main>
